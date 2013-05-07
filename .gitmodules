@@ -1,0 +1,3 @@
+[submodule "dependencies/WhirlyGlobe-Maply"]
+	path = dependencies/WhirlyGlobe-Maply
+	url = https://github.com/mousebird/WhirlyGlobe.git
