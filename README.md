@@ -4,7 +4,7 @@ This is MapBox Earth, a starting point for making your own 3D globe in iOS with 
 
 See the announcement blog post for more details: http://mapbox.com/blog/mapbox-earth
 
-![](http://imgur.com/4nJDl1s)
+![](http://i.imgur.com/4nJDl1s.gif)
 
 ## Installation
 
