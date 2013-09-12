@@ -48,7 +48,6 @@
     IBOutlet UIButton *slideButton;
     IBOutlet UICollectionView *collectionView;
 
-    UIPopoverController *popover;
     UIImageView *logoBug;
 }
 @end
@@ -352,8 +351,6 @@ static const float ActiveAlpha   = 0.75;
 {
     if (navigationType == UIWebViewNavigationTypeLinkClicked)
     {
-        [popover dismissPopoverAnimated:NO];
-
         [[UIApplication sharedApplication] openURL:request.URL];
         
         return NO;
