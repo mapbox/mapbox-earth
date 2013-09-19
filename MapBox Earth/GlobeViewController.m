@@ -265,8 +265,14 @@ static NSString *MapBoxAccount = @"YOUR_ACCOUNT_NAME_HERE";
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
 
     UIWebView *webView = [UIWebView new];
+    webView.backgroundColor = [UIColor whiteColor];
     [webViewController.view addSubview:webView];
-    webView.frame = webViewController.view.bounds;
+    webView.frame = CGRectMake(webViewController.view.bounds.origin.x,
+                               webViewController.view.bounds.origin.y + ([UIViewController instancesRespondToSelector:@selector(topLayoutGuide)] ? 10 : 0),
+                               webViewController.view.bounds.size.width,
+                               webViewController.view.bounds.size.height);
+    if ([UIViewController instancesRespondToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)])
+        webViewController.automaticallyAdjustsScrollViewInsets = NO;
     webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [webView loadRequest:[NSURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"info" withExtension:@"html"]]];
     webView.delegate = self;
