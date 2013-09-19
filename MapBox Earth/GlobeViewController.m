@@ -45,6 +45,7 @@
     NSArray *availableMaps;
     NSInteger selectedMapIndex;
     
+    IBOutlet UIButton *infoButton;
     IBOutlet UIButton *slideButton;
     IBOutlet UICollectionView *collectionView;
 
@@ -120,6 +121,24 @@ static NSString *MapBoxAccount = @"YOUR_ACCOUNT_NAME_HERE";
 
     collectionView.frame = CGRectMake(collectionView.frame.origin.x,self.view.frame.size.height,collectionView.frame.size.width,collectionView.frame.size.height);    
     slideButton.frame    = CGRectMake(slideButton.frame.origin.x,self.view.frame.size.height-slideButton.frame.size.height,slideButton.frame.size.width,slideButton.frame.size.height);
+}
+
+- (void)updateViewConstraints
+{
+    [super updateViewConstraints];
+
+    if ([UIViewController instancesRespondToSelector:@selector(topLayoutGuide)])
+    {
+        for (NSLayoutConstraint *constraint in [self.view.constraints copy])
+            if ([constraint.firstItem isEqual:infoButton] && constraint.constant == 65)
+                [self.view removeConstraint:constraint];
+
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[topLayoutGuide]-20-[infoButton]"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:@{ @"topLayoutGuide" : self.topLayoutGuide,
+                                                                                     @"infoButton"     : infoButton }]];
+    }
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
