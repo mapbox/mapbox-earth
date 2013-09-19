@@ -53,6 +53,13 @@
 			remoteGlobalIDString = 2B11E0DB15B4C030007AAE3F;
 			remoteInfo = "WhirlyGlobe-MaplyComponent";
 		};
+		DD8B929817EBB6AF0090B439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B477DC717308F1300EC5801 /* WhirlyGlobe-MaplyComponent.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B11E0DA15B4C030007AAE3F;
+			remoteInfo = "WhirlyGlobe-MaplyComponent";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -272,6 +279,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DD8B929917EBB6AF0090B439 /* PBXTargetDependency */,
 			);
 			name = "MapBox Earth";
 			productName = "MapBox Earth";
@@ -371,6 +379,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD8B929917EBB6AF0090B439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WhirlyGlobe-MaplyComponent";
+			targetProxy = DD8B929817EBB6AF0090B439 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2B944774171352F90038B551 /* InfoPlist.strings */ = {
