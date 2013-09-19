@@ -46,8 +46,6 @@
 
     self.window.backgroundColor = [UIColor blackColor];
 
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
-    
     GlobeViewController *globeViewController = [[GlobeViewController alloc] initWithNibName:@"GlobeViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:globeViewController];
     navController.navigationBar.translucent = true;
