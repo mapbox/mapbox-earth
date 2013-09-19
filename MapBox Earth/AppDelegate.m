@@ -54,6 +54,9 @@
     navController.navigationBar.barStyle = UIBarStyleBlackOpaque;
     self.window.rootViewController = navController;
 
+    if ([UIView instancesRespondToSelector:@selector(tintColor)])
+        navController.view.tintColor = [UIColor whiteColor];
+
     [self.window makeKeyAndVisible];
 
     return YES;
