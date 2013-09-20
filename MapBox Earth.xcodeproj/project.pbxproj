@@ -110,6 +110,7 @@
 		2BDC785D1715CAEA008F5402 /* IconIphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconIphone@2x.png"; sourceTree = "<group>"; };
 		2BDC785F1715CB45008F5402 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		2BDC78611715CBDC008F5402 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		DD0692C717EBD7290074946A /* MapBox Earth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "MapBox Earth.entitlements"; sourceTree = "<group>"; };
 		DD589937173879FD008FC178 /* info.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = info.html; sourceTree = "<group>"; };
 		DD589938173879FD008FC178 /* arrow-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-up.png"; sourceTree = "<group>"; };
 		DD6097E71732068D00F53DB9 /* mapbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapbox.png; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 		2B944771171352F90038B551 /* MapBox Earth */ = {
 			isa = PBXGroup;
 			children = (
+				DD0692C717EBD7290074946A /* MapBox Earth.entitlements */,
 				2B94477A171352F90038B551 /* AppDelegate.h */,
 				2B94477B171352F90038B551 /* AppDelegate.m */,
 				2B94479F1713BFB30038B551 /* GlobeViewController.h */,
@@ -297,6 +299,17 @@
 				TargetAttributes = {
 					2B944767171352F90038B551 = {
 						DevelopmentTeam = 4QJUGA28YU;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
