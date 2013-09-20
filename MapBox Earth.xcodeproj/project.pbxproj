@@ -208,7 +208,6 @@
 		2B944771171352F90038B551 /* MapBox Earth */ = {
 			isa = PBXGroup;
 			children = (
-				DD0692C717EBD7290074946A /* MapBox Earth.entitlements */,
 				2B94477A171352F90038B551 /* AppDelegate.h */,
 				2B94477B171352F90038B551 /* AppDelegate.m */,
 				2B94479F1713BFB30038B551 /* GlobeViewController.h */,
@@ -229,6 +228,7 @@
 				2B94477D171352F90038B551 /* Default.png */,
 				2B94477F171352F90038B551 /* Default@2x.png */,
 				2B944781171352F90038B551 /* Default-568h@2x.png */,
+				DD0692C717EBD7290074946A /* MapBox Earth.entitlements */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
